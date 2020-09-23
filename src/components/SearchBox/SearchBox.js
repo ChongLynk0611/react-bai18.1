@@ -16,7 +16,12 @@ class SearchBox extends Component{
     render(){
         return(
             <div className="SearchBox">
-                <input placeholder="type something to search..." onFocus={this.focusInput.bind(this)}></input>
+                <input 
+                    placeholder="type something to search..." 
+                    onFocus={()=> this.setState({isFocused:true})}
+                    onBlur = {()=> this.setState({isFocused:false})}
+                >
+                </input>
                 <div className={classNames("container-icon",{active: this.state.isFocused})}>
                     <i class="fas fa-search"></i>
                 </div>
