@@ -9,6 +9,7 @@
     border-radius: 15px;
     padding-left: 10px;
     font-size: 16px;
+    outline: none;
 }
 
 
@@ -27,6 +28,9 @@
     
 }
 
+.boder_input{
+    border-color: brown;
+}
 .active{
     
     display: none;

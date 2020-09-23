@@ -6,7 +6,8 @@ class SearchBox extends Component{
     constructor(){
         super();
         this.state = {
-            isFocused:false
+            isFocused:false,
+            content:""
         };
         
     }
@@ -17,9 +18,11 @@ class SearchBox extends Component{
         return(
             <div className="SearchBox">
                 <input 
+                    className = {classNames({boder_input:this.state.content.length > 10 })}
                     placeholder="type something to search..." 
                     onFocus={()=> this.setState({isFocused:true})}
                     onBlur = {()=> this.setState({isFocused:false})}
+                    onChange = {(e) => this.setState({content:e.target.value})}
                 >
                 </input>
                 <div className={classNames("container-icon",{active: this.state.isFocused})}>
