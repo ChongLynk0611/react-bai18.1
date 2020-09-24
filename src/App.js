@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SearchBox from './components/SearchBox/SearchBox';
+import Modal from './components/Modal/Modal';
 
 
 function App() {
   return (
     <div className="App">
-        <SearchBox />
+        <Modal />
     </div>
   );
 }
