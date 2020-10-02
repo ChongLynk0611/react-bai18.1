@@ -7,7 +7,9 @@ import Modal from './components/Modal/Modal';
 function App() {
   return (
     <div className="App">
-        <Modal />
+        <Modal >
+          Đây là phần sử dụng props.children
+        </Modal>
     </div>
   );
 }

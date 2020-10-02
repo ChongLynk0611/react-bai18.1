@@ -16,6 +16,7 @@ class Modal extends Component{
         })
     }
     render(){
+        const {children} = this.props;
         return(
             <div className="container">
                 <button 
@@ -30,8 +31,7 @@ class Modal extends Component{
                         onClick={this.handleClick}
                     ></i>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab error
-                        provident, porro consequatur labore eos.
+                        {children}
                     </p>
                     <div className="btn">
                         <button onClick={this.handleClick}>Accept</button>
