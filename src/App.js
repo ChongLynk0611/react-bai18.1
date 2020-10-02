@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
         <Modal >
-          Đây là phần sử dụng props.children
+          <h2>Đây là đoạn truyền vào h2 chứ k chỉ là đoạn text</h2>
         </Modal>
     </div>
   );
